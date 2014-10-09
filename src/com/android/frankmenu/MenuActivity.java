@@ -43,7 +43,7 @@ public class MenuActivity extends Activity{
 			public void onClick(View v) {
 				// TODO Auto-generated method stub
 				if(selecedmenu == null | selecedmenu.length == 0){
-					Toast toast = Toast.makeText(MenuActivity.this, "请选择菜品!", Toast.LENGTH_SHORT); 
+					Toast toast = Toast.makeText(getApplicationContext(), "请选择菜品!", Toast.LENGTH_SHORT); 
 					toast.show(); //请选择菜品
 				}
 				else{
