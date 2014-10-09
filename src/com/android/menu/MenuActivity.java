@@ -21,8 +21,7 @@ public class MenuActivity extends Activity{
 		// TODO Auto-generated method stub
 		super.onCreate(savedInstanceState);
 		   setContentView(R.layout.food);
-		   menu[0] = (CheckBox)findViewById(R.id.checkBox1);
-		   text[0] = (TextView)findViewById(R.id.textView1);
+		   menu[0] = (CheckBox)findViewById(R.id.checkBox1);;
 		   sendbutton = (Button)findViewById(R.id.button1);
 		   msg = new Message("13141048947");
 		   menu[0].setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener(){

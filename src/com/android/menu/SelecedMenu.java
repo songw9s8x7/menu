@@ -10,7 +10,7 @@ public class SelecedMenu {
 	}
 	@Override
 	public String toString() {
-		return "SelecedMenu [name=" + name + ", price=" + price + "]";
+		return name + ", " + price;
 	}
 	
 }
