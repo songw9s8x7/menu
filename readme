@@ -1,0 +1,5 @@
+git init
+git add .
+git commit -m "yourname"
+git remote add origin https://github.com/songw9s8x7/menu.git
+git push -u origin master
