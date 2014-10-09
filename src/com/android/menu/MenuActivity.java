@@ -31,7 +31,7 @@ public class MenuActivity extends Activity{
 	                    boolean isChecked) {
 	                // TODO Auto-generated method stub
 	                if(isChecked){
-	                    selecedmenu[0].name = (String)text[0].getText();
+	                    selecedmenu[0] = new SelecedMenu("my",10);
 	                }else{
 	                   
 	                }
