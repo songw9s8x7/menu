@@ -5,4 +5,9 @@ public class SelecedMenu {
 	public SelecedMenu(String msg){
 		this.menumsg = msg;
 	}
+	@Override
+	public String toString() {
+		return menumsg;
+	}
+	
 }
