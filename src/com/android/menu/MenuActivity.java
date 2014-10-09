@@ -15,6 +15,7 @@ public class MenuActivity extends Activity{
 	private TextView text[];
 	private Button sendbutton;
 	private SelecedMenu selecedmenu[];
+	private Message msg;
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		// TODO Auto-generated method stub
@@ -22,6 +23,8 @@ public class MenuActivity extends Activity{
 		   setContentView(R.layout.food);
 		   menu[0] = (CheckBox)findViewById(R.id.checkBox1);
 		   text[0] = (TextView)findViewById(R.id.textView1);
+		   sendbutton = (Button)findViewById(R.id.button1);
+		   msg = new Message("13141048947");
 		   menu[0].setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener(){
 	            @Override
 	            public void onCheckedChanged(CompoundButton buttonView,
@@ -34,13 +37,18 @@ public class MenuActivity extends Activity{
 	                }
 	            }
 	        }); 
-		   sendbutton = (Button)findViewById(R.id.button1);
 		   sendbutton.setOnClickListener(new View.OnClickListener(){
 
 			@Override
 			public void onClick(View v) {
 				// TODO Auto-generated method stub
-				
+				if(selecedmenu == null | selecedmenu.length == 0){
+					//请选择菜品
+				}
+				else{
+					//生成需要发送的信息
+					//发送信息					
+				}
 			}
 			   
 		   });
