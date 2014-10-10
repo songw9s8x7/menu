@@ -1,16 +1,19 @@
 package com.android.frankmenu;
 
 public class SelecedMenu {
-	private String menumsg;
+	private String name;
+	private int price;
 	public SelecedMenu(){
-		this.menumsg = " ";
+		this.name = " ";
+		this.price = 0;
 	}
-	public SelecedMenu(String msg){
-		this.menumsg = msg;
+	public SelecedMenu(String name,int price){
+		this.name = name;
+		this.price = price;
 	}
 	@Override
 	public String toString() {
-		return menumsg;
+		return name + "  " + price;
 	}
 	
 }
